@@ -1,10 +1,22 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import SearchMovie from "@/components/features/Movies";
+
+const date = new Date();
+
+const year = date.getFullYear();
 ---
 
-<Layout title="Welcome to Astro.">
-  <main class="w-[90vw] mt-5">
+<Layout title="Libreria de peliculas">
+  <main class="my-5 container">
     <SearchMovie client:load />
   </main>
+  <footer class="text-center bg-neutral-950 text-neutral-50 w-full p-4">
+    <small
+      >&copy; Copyright {year}, <a
+        href="https://github.com/koikiss-dev"
+        target="_blank">Jorge Posadas</a
+      > . UNAH</small
+    >
+  </footer>
 </Layout>

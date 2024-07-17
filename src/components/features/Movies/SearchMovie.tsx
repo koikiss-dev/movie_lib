@@ -71,7 +71,7 @@ const SearchMovie: FC<SearchMovieProps> = () => {
       <Skeleton key={index} className="flex-1 h-[300px]" />
     ));
   return (
-    <>
+    <div className=" w-full">
       <Input onChange={filterMovies} placeholder="Search a movie" />
       <div className="">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 mt-6">
@@ -107,7 +107,7 @@ const SearchMovie: FC<SearchMovieProps> = () => {
               ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
