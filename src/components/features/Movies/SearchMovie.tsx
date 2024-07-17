@@ -35,7 +35,7 @@ const SearchMovie: FC<SearchMovieProps> = () => {
   const [loading, setLoading] = useState<boolean>(true);
 
   const fetchMovies = useCallback(async () => {
-    const url = import.meta.env.API_PROD || "http://localhost:3000";
+    const url = "https://db2-peliculas-server.vercel.app";
     try {
       const { data } = await axios.get(`${url}/peliculas`, {
         signal: abortController.signal,
