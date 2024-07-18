@@ -8,10 +8,12 @@ const year = date.getFullYear();
 ---
 
 <Layout title="Libreria de peliculas">
-  <main class="my-5 container">
+  <main class="mt-5 container">
     <SearchMovie client:load />
   </main>
-  <footer class="text-center bg-neutral-950 text-neutral-50 w-full p-4">
+  <footer
+    class="text-center bg-neutral-950 text-neutral-50 w-full p-4 absolute bottom-[-100px] z-10"
+  >
     <small
       >&copy; Copyright {year}, <a
         href="https://github.com/koikiss-dev"
